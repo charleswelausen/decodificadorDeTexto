@@ -35,5 +35,5 @@ function copiar() {
 
     navigator.clipboard.writeText(textoCopiado);
 
-    alert('Texto copiado'); 
+    alert('Texto copiado.'); 
 };
