@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Decodificador de texto</title>
+
+</head>
+<body>    
+    <header class="logo-alura">
+        <img src="imagens/logoAlura.png" alt="logo Alura">
+    </header>
+
+    <main class="container">
+
+        <section class="main-1">
+
+            <div>
+                <div class="main-h1-input">
+                    <h1>Digite seu texto</h1>
+
+                    <textarea id="input"></textarea>
+                </div>      
+            </div>
+
+            <div>
+                <div class="alert">
+                    <img class="alert-img" src="./imagens/bi_exclamation-circle-fill.png" alt="Alerta de texto">
+
+                    <p class="alert-text">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="btn-text">
+                    <input type="button" class="btn-crip" value="Criptografar" onclick="criptografar()">
+                    <input type="button" class="btn-descrip" value="Descriptografar" onclick="descriptografar()">
+                </div>
+            </div>    
+
+        </section>
+
+        <section class="main-2">
+
+            <div id="paragrafo-buton">
+                
+                <p id="paragrafo"></p>
+                <div class="btn-copy">
+                    <input type="button" class="btn-copiar" value="Copiar" onclick="copiar()">
+                </div>
+            </div>
+
+            <div id="imagem-texto">
+                <div>
+                    <img class="img-lupa" src="imagens/bonecoDesafio.png" alt="homem com lupa">
+                </div>
+                <div class="img-texto">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>  
+            </div>            
+        </section>
+    </main>
+    
+    <footer>
+        <p>Charles Welausen - 2024</p>
+    </footer>
+    
+</body>
+</html>
