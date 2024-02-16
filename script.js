@@ -34,6 +34,6 @@ function copiar() {
     textoOriginal.style.display="flex";
 
     navigator.clipboard.writeText(textoCopiado);
-    
+
     alert('Texto copiado'); 
 };
