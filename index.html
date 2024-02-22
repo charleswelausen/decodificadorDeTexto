@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
+
     <title>Decodificador de texto</title>
 
 </head>
@@ -15,15 +15,12 @@
 
     <main class="container">
 
-        <section class="main-1">
+        <section class="main-1"> 
+            <div class="main-h1-input">
+                <h1>Digite seu texto</h1>
 
-            <div>
-                <div class="main-h1-input">
-                    <h1>Digite seu texto</h1>
-
-                    <textarea id="input"></textarea>
-                </div>      
-            </div>
+                <textarea id="input"></textarea>
+            </div>            
             <div>
                 <div class="alert">
                     <img class="alert-img" src="./imagens/bi_exclamation-circle-fill.png" alt="Alerta de texto">
@@ -39,9 +36,9 @@
         
         <section class="main-2">
 
-            <div id="paragrafo-buton">
+            <div id="output-buton">
                 
-                <p id="paragrafo"></p>
+                <textarea id="output"></textarea>
                 <div class="btn-copy">
                     <input type="button" class="btn-copiar" value="Copiar" onclick="copiar()">
                 </div>
@@ -62,6 +59,6 @@
     <footer>
         <p>Charles Welausen - 2024</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
