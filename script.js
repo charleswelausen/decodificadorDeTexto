@@ -1,7 +1,7 @@
-let textoOriginal = document.querySelector('textarea');
+let textoOriginal = document.getElementById('input');
 let textoCriptografado = document.getElementById('output');
 
-let paraBut = document.querySelector('#output-buton');
+let outputButton = document.querySelector('#output-button');
 let imgText = document.querySelector('#imagem-texto');
 
 let textoCopiado = '';
@@ -12,9 +12,9 @@ function criptografar() {
     
     textoCopiado = document.getElementById('output').innerHTML = cripto;
 
-    paraBut.style.display="flex";
+    outputButton.style.display="flex";
     imgText.style.display="none";
-    textoOriginal.style.display="none";
+    textoOriginal.style.opacity="0";
 };  
 
 function descriptografar() {
@@ -23,17 +23,19 @@ function descriptografar() {
     
     textoCopiado = document.getElementById('output').innerHTML = descripto;
 
-    paraBut.style.display="flex";
+    outputButton.style.display="flex";
     imgText.style.display="none";
-    textoOriginal.style.display="none";
+    textoOriginal.style.opacity="0";
+
 };
 
 function copiar() {
-    paraBut.style.display="none";
+    outputButton.style.display="none";
     imgText.style.display="flex";
-    textoOriginal.style.display="flex";
+    textoOriginal.style.opacity="1";
 
     navigator.clipboard.writeText(textoCopiado);
 
     alert('Texto copiado.'); 
+    textoOriginal.value = '';
 };

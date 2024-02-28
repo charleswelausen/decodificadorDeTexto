@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
     background-color: #e5e5e5;
     font-family:'Inter', sans-serif;
+    font-weight: 400;
     color: #0a3871;
     max-width: 90%;
     margin: 0 auto;
@@ -27,7 +28,6 @@ body {
 }
 
 #input {
-    display: flex;
     background-color: #e5e5e5;
     width: 42rem;
     height: 18rem;
@@ -36,7 +36,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 32px;
-    line-height: 48px;
+    line-height: 38px;
     color: #0a3871;
     padding: 20px;
     text-transform: lowercase;
@@ -111,7 +111,7 @@ p {
     margin-top: 16px;
 }
 
-#output-buton { 
+#output-button { 
     display: none;
     flex-direction: column;
     width: 336px;
